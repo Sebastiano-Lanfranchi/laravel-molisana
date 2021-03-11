@@ -1,0 +1,41 @@
+//RESET
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//HEADER
+
+header{
+  text-align: center;
+  padding-top: 50px;
+
+   nav{
+    padding-top: 30px;
+     ul{
+
+       li{
+         display: inline-block;
+         font-weight: bold;
+         font-size: 30px;
+         padding: 15px 5px 15px 5px;
+
+         &:hover{
+           background-color: #B2E5FC;
+         }
+       }
+     }
+   }
+}
+
+// MAIN
+
+main{
+  background-color: #B2D4DE;
+}
+
+.img-pasta{
+  text-align: center;
+}

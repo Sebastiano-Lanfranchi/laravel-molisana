@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{url('/css/app.css')}}">
+  <link rel="stylesheet" href="{{url('/css/product.css')}}">
   <title>laMolisana</title>
 
   <!-- Fonts -->
@@ -146,43 +146,10 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="container-product">
-      {{-- PASTA LUNGA --}}
-          <h2>Le Lunghe</h2>
-          <div class="lunghe">
-        @foreach ($array as $key => $pasta)
-           @if ($pasta['tipo']=="lunga")
-             <div class="container-img">
-                 <a href="{{url("product/$key")}}"><img class="img-resize" src="{{$pasta['src']}}" alt=""></a>
-              </div>
-           @endif
-        @endforeach
-        </div>
-        {{-- PASTA CORTA --}}
-        <h2>Le Corte</h2>
-        <div class="corte">
-      @foreach ($array as $key => $pasta)
-         @if ($pasta['tipo']=="corta")
-           <div class="container-img">
-               <img class="img-resize" src="{{$pasta['src']}}" alt="">
-            </div>
-         @endif
-      @endforeach
-      </div>
-        {{-- PASTA CORTISSIMA --}}
-        <h2>Le Cortissime</h2>
-        <div class="cortissime">
-      @foreach ($array as $key => $pasta)
-         @if ($pasta['tipo']=="cortissima")
-           <div class="container-img">
-               <img class="img-resize" src="{{$pasta['src']}}" alt="">
-            </div>
-         @endif
-      @endforeach
-      </div>
-          </div>
+    <main class="background">
+      <img class="img-pasta" src="{{$array[$idProduct]['src-h']}}" alt="">
+      <img src="{{$array[$idProduct]['src-p']}}" alt="">
+      {{$array[$idProduct]['descrizione'] }}
     </main>
-
   </body>
-  </html>
+</html>

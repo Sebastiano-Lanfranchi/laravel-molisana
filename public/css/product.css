@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  padding-top: 50px;
+}
+header nav {
+  padding-top: 30px;
+}
+header nav ul li {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 15px 5px 15px 5px;
+}
+header nav ul li:hover {
+  background-color: #B2E5FC;
+}
+
+main {
+  background-color: #B2D4DE;
+}
+
+.img-pasta {
+  text-align: center;
+}

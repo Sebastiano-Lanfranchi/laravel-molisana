@@ -21,13 +21,25 @@ header nav ul li:hover {
   background-color: #B2E5FC;
 }
 
+main {
+  background-color: #286782;
+  width: 95%;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
 .container-product {
   width: 1700px;
+  padding-top: 30px;
   margin: 0 auto;
 }
 
 .img-resize {
   height: 300px;
+}
+
+.container-img {
+  padding: 20px 10px 10px 20px;
 }
 
 .lunghe {
@@ -37,6 +49,7 @@ header nav ul li:hover {
 }
 .lunghe h2 {
   margin: 30px;
+  color: #002D75;
 }
 
 .corte {
@@ -46,6 +59,7 @@ header nav ul li:hover {
 }
 .corte h2 {
   margin: 30px;
+  color: #002D75;
 }
 
 .cortissime {
@@ -55,4 +69,5 @@ header nav ul li:hover {
 }
 .cortissime h2 {
   margin: 30px;
+  color: #002D75;
 }
